@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloPlatform</name>
+    </assembly>
+    <members>
+        <member name="T:HelloPlatform.Controllers.PhotoController">
+            <summary>
+            Student Schedule Controller
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:HelloPlatform.Controllers.PhotoController.Post(HelloPlatform.FileUpload,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:HelloPlatform.Controllers.PhotoController.GetPhoto(System.String)" -->
+        <member name="T:HelloPlatform.Controllers.ScheduleController">
+            <summary>
+            Student Schedule Controller
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Post(HelloPlatform.Student,System.String,System.String,System.Int32)">
+            <summary>
+            Adds a new student with their schedule and number of desire courses.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Post(System.String,System.String)">
+            <summary>
+            Adds a new course to specific student.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.PostSubjNum(System.String,System.Int32)">
+            <summary>
+            Add x number of courses to specific student
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.PostSubj(System.String)">
+            <summary>
+            Add subject to list of subjects.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Get">
+            <summary>
+            Gets all students' names and schedules..
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetClassmates(System.String)">
+            <summary>
+            Get all students of specific grade level.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetMajors(System.String)">
+            <summary>
+            Get list of students of specific major.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Get(System.String)">
+            <summary>
+            Find Student's Schedule
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetSubjects">
+            <summary>
+            Get list of current subjects offered.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Patch(HelloPlatform.Student,System.String,System.String)">
+            <summary>
+            Update Name
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Patch(HelloPlatform.Student,System.String,System.String,System.String)">
+            <summary>
+            Update a course
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Patch(System.String,System.String)">
+            <summary>
+            Change student's grade level.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.PatchMajor(System.String,System.String)">
+            <summary>
+            Change student's .major
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Delete(HelloPlatform.Student)">
+            <summary>
+            Deletes all students and schedules.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Delete(HelloPlatform.Student,System.String)">
+            <summary>
+            Deletes specific student.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.Delete(System.String,System.String)">
+            <summary>
+            Deletes specific course for student
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.DeleteNum(System.String,System.Int32)">
+            <summary>
+            Deletes x number of courses for student
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetAlphabetical">
+            <summary>
+            Returns list of registered students in alphabetical order
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetByGrade">
+            <summary>
+            Organizes students by grade
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetByMajor">
+            <summary>
+            Organizes students by major
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Controllers.ScheduleController.GetNumstudents">
+            <summary>
+            Counts number of students total
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.FileUpload.FileToUpload">
+            <summary>
+            File to upload
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Schedule.CourseType">
+            <summary>
+            Course name and level.
+            </summary>
+        </member>
+        <member name="T:HelloPlatform.Student">
+            <summary>
+            Student class
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Student.Name">
+            <summary>
+            Name of Student.
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Student.CourseList">
+            <summary>
+            List of Courses for Student.
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Student.NumberOfCourses">
+            <summary>
+            Number of Courses for Student.
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Student.Grade">
+            <summary>
+            Grade Level of Student.
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Student.Major">
+            <summary>
+            Major of Student
+            </summary>
+        </member>
+        <member name="P:HelloPlatform.Student.Photo">
+            <summary>
+            Name of file 
+            </summary>
+        </member>
+        <member name="T:HelloPlatform.Program">
+            <summary>
+            Main program class.
+            </summary>
+        </member>
+        <member name="M:HelloPlatform.Program.Main(System.String[])">
+            <summary>
+            ASP.NET Core entry point.
+            </summary>
+            <param name="args">Startup arguments.</param>
+        </member>
+        <member name="T:Adapter">
+            <summary>
+            Helper methods
+            </summary>
+        </member>
+        <member name="M:Adapter.Check(System.String,System.Collections.Generic.List{HelloPlatform.Student})">
+            <summary>
+            Check that student exists on the roster
+            </summary>
+        </member>
+        <member name="M:Adapter.CheckCourses(HelloPlatform.Student,System.String)">
+            <summary>
+            Check if course exists
+            </summary>
+        </member>
+        <member name="M:Adapter.CheckSubject(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Check if subject is valid
+            </summary>
+        </member>
+        <member name="M:Adapter.IsolateSubject(System.String)">
+            <summary>
+            Isolate subject when subject + level entered
+            </summary>
+        </member>
+        <member name="M:Adapter.ByGrade(HelloPlatform.Student[])">
+            <summary>
+            Create dictionary to get students by grade
+            </summary>
+        </member>
+    </members>
+</doc>
